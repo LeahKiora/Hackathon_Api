@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'styles.css'%}">
-  <title>Document</title>
+  <title>Random fact, Random Student & Random Image</title>
 </head>
 <body>
 
@@ -23,7 +23,34 @@
 
   <h1>Random Image</h1>
 
-  <img src="{{dog}}" alt="">
+  <img src="{{dog}}" alt="Random Dog"">
   <!-- {{dog}} -->
+  <div class="card fact_card">
+    <h2>Random Fact</h2>
+    {{ fact }}
+  </div>
+  <div class="card student_card">
+    <h2>Random Student</h2>
+    {{ student }}
+  </div>
+  <div class="card image_card">
+    <h2>Random Image</h2>
+    <img src="{{dog}}" alt="Random Dog"">
+  </div>
+  <div class="card beer_card">
+    <h2>Makeup Products </h2>
+    {{ product }}
+  </div>
+  <div class="card joke_card">
+    <h2>Some joke </h2>
+    {{ joke }}
+  </div>
+  <div class="card quote_card">
+    <h2>Some inspiring quote </h2>
+    {{ quote }}
+  </div> 
+  <form action="" method="GET">
+      <button type="onclick">Refresh</button>
+  </form>
 </body>
 </html>

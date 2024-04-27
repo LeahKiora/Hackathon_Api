@@ -4,6 +4,26 @@ h1{
 
 
 img{
-  width: 100px;
-  height: 50px
+  width: 200px;
+  height: 200px;
+  border-radius: 9999;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fact_card, .student_card, .image_card {
+    width: 300px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
